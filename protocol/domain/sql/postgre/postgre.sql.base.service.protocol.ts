@@ -1,4 +1,6 @@
 export interface PostgreSqlBaseServiceProtocol {
-  getRepository(): {};
+  getRepository(): unknown;
   setRepository(repository: {}): void;
+  createQueryBuilder(alias: string): unknown;
+  getQueryRunner(): unknown;
 }

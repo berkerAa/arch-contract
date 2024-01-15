@@ -4,4 +4,5 @@ export interface TestEnvFactoryProtocol<MockGeneratorType, TargetTestObjectType,
   testObject: TargetTestObjectType;
   queryInstance: ORMQueryType;
   connectDependencies2Transition(testObjectDependencyList: Array<{}>,): void;
+  closeResult(): Promise<void>;
 }
